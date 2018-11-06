@@ -34,11 +34,8 @@ transitive("0",0,"");
 
 ### counter
 ```
-function counter(f) {
-    var a = f(), b = f();
-    return a() == 1 && a() == 2 && a() == 3
-        && b() == 1 && b() == 2;
-}
+function(){var a=0;return function(){return ++a}}
+
 ```
 ```
 counter((_=1)=>$=>_++);
